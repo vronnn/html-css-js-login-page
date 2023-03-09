@@ -26,8 +26,18 @@
         <div class="left">
           <div class="left-cont">
             <div id="slider" class="slider">
-              <a id="log" href="" class="log current-slide">Log in</a>
-              <a id="reg" href="" class="reg">Register</a>
+              <button
+                type="button"
+                id="log"
+                href=""
+                class="btn log current-slide"
+              >
+                Log in
+              </button>
+              <button type="button" id="reg" href="" class="btn reg">
+                Register
+              </button>
+              <div class="marker"></div>
             </div>
             <div class="left-slider">
               <div class="container login">
@@ -39,6 +49,7 @@
                   <div class="login-cont">
                     <div class="input">
                       <input
+                        id="email-log"
                         type="email"
                         class="text-input"
                         placeholder="Email"
@@ -47,6 +58,7 @@
                     </div>
                     <div class="input">
                       <input
+                        id="pass-log"
                         type="password"
                         class="text-input"
                         placeholder="Password"
@@ -54,11 +66,11 @@
                       <!-- <label for="password">password</label> -->
                     </div>
                     <div class="checkbox">
-                      <input type="checkbox" name="" id="" />
+                      <input type="checkbox" name="" id="checkbox" />
                       <label for="checkbox">keep me in</label>
                     </div>
                   </div>
-                  <button type="submit">Log in</button>
+                  <button type="submit" onclick="login()">Log in</button>
                 </form>
                 <div class="other">
                   <p>Or continue with</p>
@@ -76,7 +88,71 @@
                 </div>
               </div>
               <div class="container register">
-                <h1>HELLO</h1>
+                <div class="header">
+                  <h1>Create your account</h1>
+                  <p>Hello there! Please enter your details</p>
+                </div>
+                <form action="" class="login-form">
+                  <div class="login-cont">
+                    <div class="input">
+                      <input
+                        id="uname"
+                        type="text"
+                        class="text-input"
+                        placeholder="Username"
+                      />
+                    </div>
+                    <div class="input">
+                      <input
+                        id="email"
+                        type="email"
+                        class="text-input"
+                        placeholder="Email"
+                      />
+                      <!-- <label for="email">email</label> -->
+                    </div>
+                    <div class="password">
+                      <div class="input">
+                        <input
+                          id="pass"
+                          type="password"
+                          class="text-input"
+                          placeholder="Password"
+                        />
+                        <!-- <label for="password">password</label> -->
+                      </div>
+                      <div class="input">
+                        <input
+                          id="confirm"
+                          type="password"
+                          class="text-input"
+                          placeholder="Confirm"
+                        />
+                        <!-- <label for="password">password</label> -->
+                      </div>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="" id="" />
+                      <label for="checkbox">keep me in</label>
+                    </div>
+                  </div>
+                  <button type="submit" onclick="register()">Sign up</button>
+                </form>
+                <div class="other">
+                  <p>Or sign up with</p>
+                  <div class="social">
+                    <a href="">
+                      <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-apple"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
